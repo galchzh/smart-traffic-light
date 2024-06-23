@@ -1,4 +1,16 @@
 <div class="junction">
   <img class="compass" src="assets/img/compass.png" />
-  <div class="roads-container"></div>
+  <div class="roads-container">
+    <div class="road vertical">
+      <div class="cars north-south">
+        <div *ngFor="let car of northSouthCars" class="car"></div>
+      </div>
+    </div>
+
+    <div class="road horizontal">
+      <div class="cars east-west">
+        <div *ngFor="let car of eastWestCars" class="car"></div>
+      </div>
+    </div>
+  </div>
 </div>
