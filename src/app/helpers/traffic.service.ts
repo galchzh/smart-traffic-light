@@ -44,7 +44,6 @@ export class TrafficService {
 
   private simulateTraffic(road: RoadDirection) {
     const interval = this.getRandomInterval();
-    console.log({ road, interval });
 
     setTimeout(() => {
       if (road === Roads.NS) {
