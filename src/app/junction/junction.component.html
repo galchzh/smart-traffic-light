@@ -5,12 +5,14 @@
       <div class="cars north-south">
         <div *ngFor="let car of northSouthCars" class="car"></div>
       </div>
+      <app-traffic-light [direction]="'north-south'"></app-traffic-light>
     </div>
 
     <div class="road horizontal">
       <div class="cars east-west">
         <div *ngFor="let car of eastWestCars" class="car"></div>
       </div>
+      <app-traffic-light [direction]="'east-west'"></app-traffic-light>
     </div>
   </div>
 </div>
