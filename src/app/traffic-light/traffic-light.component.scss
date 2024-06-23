@@ -1,0 +1,35 @@
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+
+  &.north-south {
+    bottom: 0;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  &.east-west {
+    flex-direction: row;
+    left: 0;
+    margin: auto 10px;
+    height: 100%;
+  }
+
+  .light {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 2px;
+
+    &.red.active {
+      background-color: red;
+    }
+
+    &.green.active {
+      background-color: green;
+    }
+  }
+}

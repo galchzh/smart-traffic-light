@@ -1,3 +1,4 @@
 <div class="traffic-light" [ngClass]="direction">
-  {{ direction }} | {{ currentLight }}
+  <div class="light red" [class.active]="currentLight === 'red'"></div>
+  <div class="light green" [class.active]="currentLight === 'green'"></div>
 </div>
