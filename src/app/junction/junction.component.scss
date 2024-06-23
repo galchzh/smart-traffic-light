@@ -66,5 +66,51 @@
         }
       }
     }
+
+    .animation {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      .car-crossing {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &.north-south {
+          animation: northSouthMove 2s linear;
+          background-image: url("/assets/img/car-front.png");
+        }
+
+        &.east-west {
+          animation: eastWestMove 2s linear;
+          background-image: url("/assets/img/car-side.png");
+        }
+      }
+    }
+  }
+
+  @keyframes northSouthMove {
+    from {
+      top: 0;
+      left: 45%;
+    }
+    to {
+      top: 100%;
+      left: 45%;
+    }
+  }
+
+  @keyframes eastWestMove {
+    from {
+      right: 0;
+      top: 45%;
+    }
+    to {
+      right: 100%;
+      top: 45%;
+    }
   }
 }

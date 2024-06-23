@@ -91,4 +91,12 @@ export class TrafficService {
   getLightState(direction: RoadDirection) {
     return direction === Roads.NS ? this.northSouthLight$ : this.eastWestLight$;
   }
+
+  carCrossed(direction: RoadDirection) {
+    if (direction === Roads.NS) {
+      this.northSouthTraffic.next(this.northSouthTraffic.value - 1);
+    } else {
+      this.eastWestTraffic.next(this.eastWestTraffic.value - 1);
+    }
+  }
 }

@@ -14,5 +14,16 @@
       </div>
       <app-traffic-light [direction]="'east-west'"></app-traffic-light>
     </div>
+
+    <div class="animation">
+      <div
+        class="car-crossing north-south"
+        *ngIf="isCarCrossing('north-south')"
+      ></div>
+      <div
+        class="car-crossing east-west"
+        *ngIf="isCarCrossing('east-west')"
+      ></div>
+    </div>
   </div>
 </div>
