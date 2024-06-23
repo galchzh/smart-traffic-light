@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
-import { CROSSING_DURATION, RoadDirection, Roads } from './helper';
+import {
+  CROSSING_DURATION,
+  MAX_ARRIVAL_TIME,
+  MIN_ARRIVAL_TIME,
+  RoadDirection,
+  Roads,
+  TrafficLightOptions,
+} from './helper';
 import { BehaviorSubject } from 'rxjs';
-
-const enum TrafficLightOptions {
-  RED = 'red',
-  GREEN = 'green',
-}
-
-const MIN_ARRIVAL_TIME = 10000; // 10 seconds in ms
-const MAX_ARRIVAL_TIME = 30000; // 30 seconds in ms
 
 @Injectable({
   providedIn: 'root',
