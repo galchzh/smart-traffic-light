@@ -1,27 +1,50 @@
-# SmartTrafficLight
+# Smart Traffic Light
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+![Smart Traffic Light](https://github.com/galchzh/smart-traffic-light/blob/main/smart-traffic-light.gif)
 
-## Development server
+## Instructions
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The purpose of the smart traffic light is to divide the green light time based on the amount of traffic at the intersection.
+There are two roads at our junction, and they intersect:
 
-## Code scaffolding
+- North to South
+- East to west
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Statistics:
 
-## Build
+- Every 10 to 30 seconds, cars arrive along each road.
+- It takes each car 2 seconds to cross the junction when the green light is on
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Your mission is to create a UI that simulates the junction, display the amount of cars in each road and reduces traffic jams. Build the simulation based on components and services using one of the JS frameworks (preferred Angular) or Vanilla JS.
 
-## Running unit tests
+## Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To get started with the Smart Traffic Light project, follow these steps:
 
-## Running end-to-end tests
+1. **Clone the repository:**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   git clone https://github.com/galchzh/smart-traffic-light.git
+   cd smart-traffic-light
+   ```
 
-## Further help
+2. **Install Angular CLI (if not already installed):**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```bash
+   npm install -g @angular/cli
+   ```
+
+3. **Install project dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Run the application locally:**
+
+   ```bash
+   ng serve
+   ```
+
+5. **Open the application in your browser:**
+   Open your web browser and navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
