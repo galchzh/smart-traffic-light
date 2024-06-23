@@ -5,3 +5,4 @@ export enum Roads {
   EW = 'east-west',
 }
 
+export const CROSSING_DURATION = 2000; // 2 seconds in ms
