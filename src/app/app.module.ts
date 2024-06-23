@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { JunctionComponent } from './junction/junction.component';
+import { TrafficLightComponent } from './traffic-light/traffic-light.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    JunctionComponent,
+    TrafficLightComponent
   ],
   imports: [
     BrowserModule,
